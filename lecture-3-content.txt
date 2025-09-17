@@ -1,1 +1,125 @@
 Hi,Chhavi here.
+
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in /Users/chhavi/Desktop/Git-Lecture-2-A/.git/
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git add .
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git commit -m "revision"   
+[master (root-commit) 025fa1d] revision
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 lecture-2-content.txt
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git branch -M main
+git remote add origin https://github.com/Chhavi-2407/Git-lecture-2-A.git
+git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 224 bytes | 224.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Chhavi-2407/Git-lecture-2-A.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git init
+Reinitialized existing Git repository in /Users/chhavi/Desktop/Git-Lecture-2-A/.git/
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git add .
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git commit -m "phir se revision"
+[main bdd0a87] phir se revision
+ 1 file changed, 2 insertions(+)
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git branch -M main
+git remote add origin https://github.com/Chhavi-2407/Git-lecture-2-A.git
+git push -u origin main
+error: remote origin already exists.
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 337 bytes | 337.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Chhavi-2407/Git-lecture-2-A.git
+   025fa1d..bdd0a87  main -> main
+branch 'main' set up to track 'origin/main'.
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git add .
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git commit -m "message"
+[main 91fbf66] message
+ 1 file changed, 1 insertion(+)
+ create mode 100644 lecture-3-content.txt
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 295 bytes | 295.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Chhavi-2407/Git-lecture-2-A.git
+   bdd0a87..91fbf66  main -> main
+branch 'main' set up to track 'origin/main'.
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git branch feature-chatbot
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git branch
+  feature-chatbot
+* main
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git checkout feature-chatbot
+Switched to branch 'feature-chatbot'
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git branch jarvis 
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git branch
+  feature-chatbot
+  jarvis
+* main
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git checkout feature-chatbot
+Switched to branch 'feature-chatbot'
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git checkout -b bug-add-to-cart
+Switched to a new branch 'bug-add-to-cart'
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git branch -d jarvis
+Deleted branch jarvis (was 91fbf66).
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git branch
+  bug-add-to-cart
+  feature-chatbot
+* main
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git checkout bug-add-to-cart
+Switched to branch 'bug-add-to-cart'
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git add .
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git commit -m "all about branching"
+[bug-add-to-cart bda4cc5] all about branching
+ 2 files changed, 36 insertions(+), 1 deletion(-)
+ create mode 100644 bug-resolved-add-to-cart.txt
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git push -u origin bug-add-to-cart
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 624 bytes | 624.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'bug-add-to-cart' on GitHub by visiting:
+remote:      https://github.com/Chhavi-2407/Git-lecture-2-A/pull/new/bug-add-to-cart
+remote: 
+To https://github.com/Chhavi-2407/Git-lecture-2-A.git
+ * [new branch]      bug-add-to-cart -> bug-add-to-cart
+branch 'bug-add-to-cart' set up to track 'origin/bug-add-to-cart'.
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % 
