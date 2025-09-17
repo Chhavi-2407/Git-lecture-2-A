@@ -1,1 +1,35 @@
 Hi,Chhavi here.
+
+This is all about branching.
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git branch feature-chatbot
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git branch
+  feature-chatbot
+* main
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git checkout feature-chatbot
+Switched to branch 'feature-chatbot'
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git branch jarvis 
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git branch
+  feature-chatbot
+  jarvis
+* main
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git checkout feature-chatbot
+Switched to branch 'feature-chatbot'
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git checkout -b bug-add-to-cart
+Switched to a new branch 'bug-add-to-cart'
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git branch -d jarvis
+Deleted branch jarvis (was 91fbf66).
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git branch
+  bug-add-to-cart
+  feature-chatbot
+* main
+chhavi@Chhavis-MacBook-Pro Git-Lecture-2-A % git checkout bug-add-to-cart
+Switched to branch 'bug-add-to-cart'
